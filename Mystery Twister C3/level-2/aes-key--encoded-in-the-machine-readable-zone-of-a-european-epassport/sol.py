@@ -1,0 +1,3 @@
+import base64
+s = "9MgYwmuPrjiecPMx61O6zluy3MtIXQQ0E59T3xB6u0Gyf1gYs2i3K9Jxaa0zj4gTMazJuApwd6+jdyel5iGHvhQyDHGVIAuYTgJrbFDrfB22Fpil2NfNnWFBTXyf7SDI"
+print(base64.b64decode(s))

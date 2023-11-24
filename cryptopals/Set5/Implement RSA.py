@@ -1,4 +1,4 @@
-from gmpy2 import *
+from gmpy2 import powmod
 from Crypto.Util.number import *
 
 e = 0x10001

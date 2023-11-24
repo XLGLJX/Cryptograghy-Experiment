@@ -44,7 +44,8 @@ def cbc_decrypt(cipher: bytes, key: bytes, iv: bytes) -> bytes:
     plain.append(strxor(AES_decrypt(blocks[0], key), iv))
     return unpad(b"".join(reversed(plain)), AES.block_size)
 
-def encryption_oracle(input_, random_flag = True):
+def encryption_oracle(input_, key,  random_flag = True):
+    plaintext = input_
     if random_flag:
         key = long_to_bytes(getRandomInteger(128)).ljust(16)
         iv = long_to_bytes(getRandomInteger(128)).ljust(16)
